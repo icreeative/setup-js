@@ -4,7 +4,9 @@
   "main": "src/index.js",
   "license": "MIT",
   "scripts": {
-    "build": "webpack"
+    "build": "webpack",
+    "build:dev": "webpack --watch",
+    "build:prod": "webpack --p"
   },
   "devDependencies": {
     "path": "^0.12.7",
