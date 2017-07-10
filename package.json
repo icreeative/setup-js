@@ -17,6 +17,7 @@
     "webpack-dev-server": "^2.5.1"
   },
   "dependencies": {
+    "copy-webpack-plugin": "^4.0.1",
     "css-loader": "^0.28.4",
     "extract-text-webpack-plugin": "^2.1.2",
     "node-sass": "^4.5.3",
