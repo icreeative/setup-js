@@ -4,7 +4,8 @@ var CopyPlugin = require('copy-webpack-plugin');
 let config = {
     entry: [
         './src/index.js',
-        './src/style.scss'
+        './src/style.scss',
+        './index.html'
     ],
     output: {
         path: __dirname + '/dist',
@@ -24,6 +25,10 @@ let config = {
                     'css-loader',
                     'sass-loader'
                 ]),
+            },
+            {
+                test: /\.html$/,
+                loader: 'raw-loader'
             }
         ]
     },
